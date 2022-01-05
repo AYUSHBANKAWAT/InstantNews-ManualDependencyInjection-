@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent"
+    tools:viewBindingIgnore="false"
+    tools:context=".fragments.SearchFragment">
+
+   <com.google.android.material.card.MaterialCardView
+       android:layout_width="0dp"
+       android:layout_height="60dp"
+       android:id="@+id/cVSearch"
+       android:layout_margin="8dp"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:cardElevation="@dimen/card_elevation"
+       app:cardCornerRadius="@dimen/corner_radius"
+       app:cardBackgroundColor="@color/white">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/white"
+           >
+           
+           <com.google.android.material.textfield.TextInputLayout
+               android:layout_width="0dp"
+               android:layout_height="0dp"
+               android:id="@+id/textInputLayout"
+               android:hint="Search"
+               android:textColorHint="@color/subTitleTextColor"
+               app:boxBackgroundColor="@color/white"
+               app:endIconMode="custom"
+               app:endIconDrawable="@drawable/ic_sharp_search_24"
+               app:endIconContentDescription="search"
+               app:hintTextColor="@color/colorPrimary"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintStart_toStartOf="parent">
+               <com.google.android.material.textfield.TextInputEditText
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:inputType="text"
+                   android:id="@+id/etSearch"/>
+           </com.google.android.material.textfield.TextInputLayout>
+           
+       </androidx.constraintlayout.widget.ConstraintLayout>
+
+   </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:itemCount="10"
+        app:layout_constraintTop_toBottomOf="@+id/cVSearch"
+        android:id="@+id/rvSearchNewsFragment"
+        tools:listitem="@layout/item_saved"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:layout_width="0dp"
+        android:id="@+id/shimmerFrameLayout"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/cVSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:shimmer_duration="1000"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@color/background"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+                <include layout="@layout/article_card"
+                    android:background="@color/background"
+                    />
+            </LinearLayout>
+        </ScrollView>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

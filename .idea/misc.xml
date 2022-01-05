@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/drawable/selector.xml" value="0.11944444444444445" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/layout/activity_main.xml" value="0.14666666666666667" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/layout/article_card.xml" value="0.16666666666666666" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/layout/fragment_article.xml" value="0.16510416666666666" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/layout/fragment_breaking_news.xml" value="0.1" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/layout/fragment_savedragment.xml" value="0.13703703703703704" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/layout/fragment_search.xml" value="0.13333333333333333" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/layout/item_saved.xml" value="0.18072916666666666" />
+        <entry key="..\:/kotlinproject/NewsAppGOLAPBARMAN/app/src/main/res/menu/main_menu.xml" value="0.12" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

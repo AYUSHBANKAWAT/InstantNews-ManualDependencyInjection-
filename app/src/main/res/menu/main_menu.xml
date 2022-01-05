@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/breakingNews"
+        android:title="Breaking News"
+        android:enabled="true"
+        android:icon="@drawable/ic_sharp_newspaper_24"
+        android:iconTint="@color/white"
+        />
+    <item
+        android:title="Search"
+        android:id="@+id/searchNews"
+        android:enabled="true"
+        android:icon="@drawable/ic_sharp_search_24"
+        android:iconTint="@color/white"/>
+    <item
+        android:icon="@drawable/ic_baseline_bookmarks_24"
+        android:id="@+id/bookMark"
+        android:enabled="true"
+        android:iconTint="@color/white"
+        android:title="BookMark"/>
+
+</menu>
